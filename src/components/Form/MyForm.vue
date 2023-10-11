@@ -1,6 +1,5 @@
 <template>
   <h1>My form</h1>
-  <v-sheet width="300px" elevation="3" rounded>
     <v-form class="px-2 py-4" @submit.prevent="submit">
       <v-text-field
         v-model="formState.firstName"
@@ -92,7 +91,6 @@
 
       <v-btn type="submit" block color="blue">Submit</v-btn>
     </v-form>
-  </v-sheet>
 </template>
 
 <script setup lang="ts">

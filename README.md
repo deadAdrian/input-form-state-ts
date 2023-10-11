@@ -1,46 +1,52 @@
-# input-form-state-ts
+# Vue form project with typescript
 
-This template should help get you started developing with Vue 3 in Vite.
+This project was made to get a better understanding about TypeScript in Vue framework and also explore some libraries that make working with forms easier.
 
-## Recommended IDE Setup
+## Tools used in this project
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+* Vuetify
+* Vuelidate
+* Vue-the-mask
+* Vue currency input
 
-## Type Support for `.vue` Imports in TS
+<b>Vuetify</b> was used as a component library, from where i used the main components in this project.<br>
+<b>Vuelidate</b> is a validation library, that makes your life easier (once you understand how it works) validating your form data, it comes with pre-made rules such as how a input email should be to be valid so you don't have to.<Br>
+<b>Vue-the-mask</b> is, as the name suggests, a mask library, that formats your input as you wish, placing special characters in the correct spots, saving your time from treating such thing.<br>
+<b>Vue currency input</b> is a input component that i used from outside vuetify, because of the personalization with number inputs that you can get with it.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## How it works
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+It's a pretty simple project, but with some catches. Basically i'm using Pinia to handle the state of the input fields and that is pretty much of it. The most catchy part was the CEP field, because of its real-time api validation.
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## Output
 
-## Customize configuration
+What i got from this project was a better understanding of TypeScript with, not only Vue, but JS/TS libraries in general, the whole type hunting thing was very challenging but as the project progressed i got used to it.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Requirements
 
-## Project Setup
+If you want to run the project, you will need:
 
-```sh
-npm install
+* NodeJS
+* asdf (recommended)
+* Yarn
+
+After cloning it:
+
+```bash
+cd input-form-state-ts
 ```
 
-### Compile and Hot-Reload for Development
+```bash
+# if you have asdf
+asdf install
 
-```sh
-npm run dev
+#if you don´t you gonna have to install NodeJS and Yarn if you already don't have 
 ```
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
+```bash
+yarn
 ```
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
+```bash
+yarn dev
 ```
